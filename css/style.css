@@ -1,0 +1,193 @@
+:root {
+   --color--PaleBlue: hsl(225, 100%, 98%);
+   --color--PaleBlueBackground: hsl(225, 100%, 94%);
+   --color--BrightBlue: hsl(245, 75%, 52%);
+   --color--BrightBlueHover: hsl(245, 75%, 70%);
+   --color--VeryPaleBlue: hsl(225, 100%, 100%);
+   --color--DesaturatedBlue: hsl(224, 23%, 55%);
+   --color--DarkBlue: hsl(223, 47%, 23%);
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   background-image: url("/img/pattern-background-desktop.svg");
+   background-repeat: no-repeat;
+   background-color: var(--color--PaleBlueBackground);
+}
+.card {
+   border: 1px solid none;
+   background: var(--color--VeryPaleBlue);
+   border-radius: 20px;
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 120px;
+   width: 450px;
+   height: 680px;
+   -webkit-box-shadow: -2px 31px 25px -5px hsl(225, 100%, 90%);
+   -moz-box-shadow: -2px 31px 25px 0.5px hsl(225, 100%, 90%);
+   box-shadow: -2px 31px 25px -5px hsl(225, 100%, 90%);
+}
+.card__img {
+   width: 100%;
+   height: 220px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   background-image: url("/img/illustration-hero.svg");
+}
+.card__container {
+   margin: 0 auto;
+   margin-top: 50px;
+   height: 340px;
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.card__title {
+   font-family: "Red Hat Display", sans-serif;
+   font-size: 28px;
+   color: var(--color--DarkBlue);
+   font-weight: 900;
+}
+.card__text {
+   margin-top: 10px;
+   padding-left: 30px;
+   padding-right: 30px;
+   font-size: 16px;
+   line-height: 25px;
+   font-family: "Red Hat Display", sans-serif;
+   color: var(--color--DesaturatedBlue);
+   font-weight: 500;
+}
+.plan {
+   margin: 0 auto;
+   margin-top: 20px;
+   text-align: center;
+   width: 90%;
+   padding: 15px;
+   border-radius: 10px;
+   display: flex;
+   background: var(--color--PaleBlue);
+}
+.plan__price {
+   margin-top: 10px;
+   margin-left: 20px;
+   line-height: 25px;
+   text-align: start;
+}
+.plan__price-span {
+   font-family: "Red Hat Display", sans-serif;
+   color: var(--color--DarkBlue);
+   font-weight: 900;
+}
+.plan__price-p {
+   color: var(--color--DesaturatedBlue);
+   font-family: "Red Hat Display", sans-serif;
+   font-weight: 500;
+}
+.plan__link {
+   position: relative;
+   margin: 25px;
+   left: 60px;
+   font-size: 15px;
+   color: hsl(245, 75%, 61%);
+   font-family: "Red Hat Display", sans-serif;
+   font-weight: 900;
+}
+.plan__img {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+}
+.plan__buttonProceed {
+   text-decoration: none;
+   margin-top: 30px;
+   padding: 15px;
+   border-radius: 10px;
+   background: var(--color--BrightBlue);
+   font-family: "Red Hat Display", sans-serif;
+   font-weight: 700;
+   color: var(--color--PaleBlue);
+   -webkit-box-shadow: 0px 22px 1px -1px hsl(245, 75%, 94%);
+   -moz-box-shadow: 0px 22px 11px -1px hsl(245, 75%, 94%);
+   box-shadow: 0px 22px 11px -1px hsl(245, 75%, 94%);
+}
+.plan__buttonCancel {
+   text-decoration: none;
+   margin-top: 30px;
+   color: var(--color--DesaturatedBlue);
+   font-family: "Red Hat Display", sans-serif;
+   font-weight: 900;
+}
+.plan__link:hover {
+   text-decoration: none;
+   color: var(--color--BrightBlueHover);
+}
+.plan__buttonProceed:hover {
+   background: var(--color--BrightBlueHover);
+}
+.plan__buttonCancel:hover {
+   color: hsl(224, 23%, 30%);
+}
+
+@media screen and (max-width: 375px) {
+   body {
+      background: url("/img/pattern-background-mobile.svg");
+      background-repeat: no-repeat;
+      background-color: var(--color--PaleBlueBackground);
+   }
+   .card {
+      margin: 0 auto;
+      text-align: center;
+      width: 330px;
+      height: 578px;
+      margin-top: 70px;
+   }
+   .card__img {
+      background-size: cover;
+      background-position: center center;
+      width: 330px;
+      height: 160px;
+   }
+   .card__container {
+      margin-top: 30px;
+      width: 84%;
+   }
+   .card__title {
+      font-size: 24px;
+      font-weight: 900;
+   }
+   .card__text {
+      margin-top: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-weight: 500;
+   }
+   .plan {
+      margin-top: 23px;
+      padding: 10px;
+   }
+   .plan__price {
+      margin-right: -100px;
+      margin-left: 20px;
+      line-height: 20px;
+      margin-top: 12px;
+      margin-bottom: 10px;
+      font-size: 14px;
+   }
+   .plan__price-span {
+      text-align: start;
+   }
+   .plan__img {
+      margin-left: 5px;
+   }
+   .plan__link {
+      left: 120px;
+      font-size: 13px;
+   }
+   .plan__buttonCancel {
+      margin-top: 20px;
+   }
+}
