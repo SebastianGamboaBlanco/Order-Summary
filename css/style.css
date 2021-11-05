@@ -12,7 +12,7 @@
    padding: 0;
 }
 body {
-   background-image: url("/img/pattern-background-desktop.svg");
+   background-image: url("../img/pattern-background-desktop.svg");
    background-repeat: no-repeat;
    background-color: var(--color--PaleBlueBackground);
 }
@@ -34,7 +34,7 @@ body {
    height: 220px;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   background-image: url("/img/illustration-hero.svg");
+   background-image: url("../img/illustration-hero.svg");
 }
 .card__container {
    margin: 0 auto;
@@ -134,7 +134,7 @@ body {
 
 @media screen and (max-width: 375px) {
    body {
-      background: url("/img/pattern-background-mobile.svg");
+      background: url("../img/pattern-background-mobile.svg");
       background-repeat: no-repeat;
       background-color: var(--color--PaleBlueBackground);
    }
